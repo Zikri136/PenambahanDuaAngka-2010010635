@@ -225,7 +225,10 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
  }
     private void hapusbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusbtnActionPerformed
         // TODO add your handling code here:
-       
+       angkapertamaTF.setText("");
+         angkakeduaTF.setText(null);
+         hasilTF.setText("");
+         angkapertamaTF.requestFocus();
     }//GEN-LAST:event_hapusbtnActionPerformed
 
     private void angkapertamaTF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_angkapertamaTF1ActionPerformed
