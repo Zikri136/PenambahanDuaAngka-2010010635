@@ -5,6 +5,8 @@
  */
 package penambahanduaangka;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -59,7 +61,7 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
             }
         });
 
-        jPanel4.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel4.setBackground(new java.awt.Color(153, 255, 102));
 
         jLabel2.setText("Angka Pertama");
 
@@ -97,7 +99,7 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
             }
         });
 
-        jPanel5.setBackground(new java.awt.Color(255, 102, 102));
+        jPanel5.setBackground(new java.awt.Color(102, 255, 255));
 
         jLabel3.setText("Angka Kedua");
 
@@ -128,7 +130,7 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
                 .addGap(21, 21, 21))
         );
 
-        jPanel2.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 0, 204));
 
         jLabel4.setText("Hasil");
 
@@ -212,9 +214,15 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
 
     private void tambahbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahbtnActionPerformed
         // TODO add your handling code here:
-
+            if(angkapertamaTF.getText().equals("") || angkakeduaTF.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Salah satu input tidak boleh kosong");
+       } else {
+           int angkapertama = Integer.valueOf(angkapertamaTF.getText());
+            int angkakedua = Integer.valueOf(angkakeduaTF.getText());
+            int hasil = angkapertama + angkakedua;
+            hasilTF.setText(Integer.toString(hasil));
     }//GEN-LAST:event_tambahbtnActionPerformed
-
+ }
     private void hapusbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusbtnActionPerformed
         // TODO add your handling code here:
        
