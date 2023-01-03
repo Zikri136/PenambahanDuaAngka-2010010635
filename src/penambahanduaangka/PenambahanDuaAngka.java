@@ -214,10 +214,10 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
 
     private void tambahbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahbtnActionPerformed
         // TODO add your handling code here:
-            if(angkapertamaTF.getText().equals("") || angkakeduaTF.getText().equals("")){
+            if(angkapertamaTF1.getText().equals("") || angkakeduaTF.getText().equals("")){
             JOptionPane.showMessageDialog(null, "Salah satu input tidak boleh kosong");
        } else {
-           int angkapertama = Integer.valueOf(angkapertamaTF.getText());
+           int angkapertama = Integer.valueOf(angkapertamaTF1.getText());
             int angkakedua = Integer.valueOf(angkakeduaTF.getText());
             int hasil = angkapertama + angkakedua;
             hasilTF.setText(Integer.toString(hasil));
@@ -225,10 +225,10 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
  }
     private void hapusbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusbtnActionPerformed
         // TODO add your handling code here:
-       angkapertamaTF.setText("");
+       angkapertamaTF1.setText("");
          angkakeduaTF.setText(null);
          hasilTF.setText("");
-         angkapertamaTF.requestFocus();
+         angkapertamaTF1.requestFocus();
     }//GEN-LAST:event_hapusbtnActionPerformed
 
     private void angkapertamaTF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_angkapertamaTF1ActionPerformed
@@ -278,6 +278,7 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                new PenambahanDuaAngka().setVisible(true);
             }
         });
     }
