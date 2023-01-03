@@ -237,7 +237,7 @@ public class PenambahanDuaAngka extends javax.swing.JFrame {
 
     private void keluarbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarbtnActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+                System.exit(0);
     }//GEN-LAST:event_keluarbtnActionPerformed
 
     private void angkakeduaTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_angkakeduaTFActionPerformed
